@@ -6,10 +6,9 @@ var match = require('./match');
 
 function send(urlstr){
   var link = url.parse(urlstr);
-
   var options = {
-    host:link.hostname,
-    port:link.port,
+    hostname:link.hostname,
+    port:80,
     path:link.path
   }
 
